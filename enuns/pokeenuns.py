@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class Cor(Enum):
     normal = '#A8A77A'
     fire = '#EE8130'
@@ -20,4 +19,5 @@ class Cor(Enum):
     dark = '#705746'
     steel = '#B7B7CE'
     fairy = '#D685AD'
+
 
