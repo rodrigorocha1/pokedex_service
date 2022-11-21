@@ -130,6 +130,5 @@ dmypy.json
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/pokedex_service.iml
-/service/pokeservice.py
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/vcs.xml
