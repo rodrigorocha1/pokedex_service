@@ -18,7 +18,7 @@ class Pokemom:
         ]
 
     @property
-    def name(self):
+    def name(self) -> str:
         return self._name
 
     @property
@@ -26,7 +26,7 @@ class Pokemom:
         return self._id
 
     @property
-    def tipos(self):
+    def tipos(self) -> List[str]:
         return self._tipos
 
     @property
@@ -38,7 +38,7 @@ class Pokemom:
         return self._cor
 
     @property
-    def habilidade(self):
+    def habilidade(self) -> List[str]:
         return self._habilidade
 
     @property
