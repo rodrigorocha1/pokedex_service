@@ -7,7 +7,7 @@ class PokeAPI:
     def __init__(self):
         self.__base_url = 'https://pokeapi.co/api/'
 
-    def obter_dados_pokemon_id(self, id_pokemon: int):
+    def obter_dados_pokemon_id(self, id_pokemon: int) -> Pokemom:
         url = f'{self.__base_url}/v2/pokemon/{id_pokemon}/'
         try:
             req = requests.get(url)

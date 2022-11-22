@@ -2,7 +2,7 @@ from enuns.pokeenuns import Cor
 
 
 class Pokemom:
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs: dict):
         self._id = kwargs['id']
         self._name = kwargs['name']
         self._tipos = [tipos['type']['name'] for tipos in kwargs.get('types')]
