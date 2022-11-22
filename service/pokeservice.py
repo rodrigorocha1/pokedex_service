@@ -20,13 +20,13 @@ class PokeAPI:
             pokemon = Pokemom(**req.json())
 
         except ex.HTTPError as errh:
-            raise errh
+            print(errh)
         except ex.ConnectionError as errc:
-            raise errc
+            print(errc)
         except ex.Timeout as errt:
-            raise errt
+             print(errt)
         except ex.RequestException as err:
-            raise err
+            print(err)
         except Exception as e:
-            raise e
+            print(e)
         return pokemon
