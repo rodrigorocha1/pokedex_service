@@ -1,7 +1,7 @@
 from service.pokeservice import PokeAPI
 
 c = PokeAPI()
-for i in range(900):
+for i in range(2):
     pokemon = c.obter_dados_pokemon_id(i + 1)
 
     print(pokemon.name)

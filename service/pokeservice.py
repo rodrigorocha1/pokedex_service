@@ -14,7 +14,7 @@ class PokeAPI:
         :param id_pokemon: id do pokemon int
         :return: objeto do tipo pokemon
         """
-        url = f'{self.__base_url}/v2/pokemon/{id_pokemon}/'
+        url = f'{self.__base_url}v2/pokemon/{id_pokemon}/'
         try:
             req = requests.get(url)
 
