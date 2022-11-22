@@ -3,14 +3,15 @@ from enuns.pokeenuns import Cor
 
 class Pokemom:
     def __init__(self, **kwargs):
-        self._name = kwargs['name']
         self._id = kwargs['id']
+        self._name = kwargs['name']
         self._tipos = [tipos['type']['name'] for tipos in kwargs.get('types')]
         self._cor = ''.join(
             [cor.value for cor in Cor
              if [tipos['type']['name']
                  for tipos in kwargs.get('types')][0] in cor.name])
         self._habilidade = [habilidades['ability']['name'] for habilidades in kwargs['abilities']]
+        self._img = kwargs['sprites']['other']['official-artwork']['front_default']
         self._estatisicas = [
             {
                 'nome': kwargs['stats'][chave]['stat']['name'],
