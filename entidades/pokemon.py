@@ -32,6 +32,10 @@ class Pokemom:
         return self._tipos
 
     @property
+    def img(self):
+        return self._img
+
+    @property
     def cor(self):
         return self._cor
 
