@@ -3,7 +3,7 @@ from typing import Dict, List
 
 
 class Pokemom:
-    def __init__(self, **kwargs: dict):
+    def __init__(self, **kwargs):
         self._id = kwargs['id']
         self._name = kwargs['name']
         self._tipos = [tipos['type']['name'] for tipos in kwargs.get('types')]
