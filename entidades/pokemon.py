@@ -1,4 +1,5 @@
 from enuns.pokeenuns import Cor
+from typing import Dict, List
 
 
 class Pokemom:
@@ -41,5 +42,5 @@ class Pokemom:
         return self._habilidade
 
     @property
-    def estatisticas(self):
+    def estatisticas(self) -> Dict[str, List[int]]:
         return self._estatisicas
