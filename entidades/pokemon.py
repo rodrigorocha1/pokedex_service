@@ -6,10 +6,7 @@ class Pokemom:
         self._id = kwargs['id']
         self._name = kwargs['name']
         self._tipos = [tipos['type']['name'] for tipos in kwargs.get('types')]
-        self._cor = ''.join(
-            [cor.value for cor in Cor
-             if [tipos['type']['name']
-                 for tipos in kwargs.get('types')][0] in cor.name])
+        self._cor = ''.join([cor.value for cor in Cor if self._tipos[0] in cor.name])
         self._habilidade = [habilidades['ability']['name'] for habilidades in kwargs['abilities']]
         self._img = kwargs['sprites']['other']['official-artwork']['front_default']
         self._estatisicas = [
@@ -24,7 +21,7 @@ class Pokemom:
         return self._name
 
     @property
-    def id(self):
+    def id(self) -> int:
         return self._id
 
     @property
@@ -32,11 +29,11 @@ class Pokemom:
         return self._tipos
 
     @property
-    def img(self):
+    def img(self) -> str:
         return self._img
 
     @property
-    def cor(self):
+    def cor(self) -> str:
         return self._cor
 
     @property
