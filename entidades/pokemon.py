@@ -44,3 +44,18 @@ class Pokemom:
     @property
     def estatisticas(self) -> Dict[str, List[int]]:
         return self._estatisicas
+
+
+if __name__ == '__main__':
+    from service.pokeservice import PokeAPI
+
+    c = PokeAPI()
+    pokemon = c.obter_dados_pokemon_id(0)
+
+    print(pokemon.name)
+    print(pokemon.img)
+    print(pokemon.id)
+    print(pokemon.tipos)
+    print(pokemon.cor)
+    print(pokemon.estatisticas)
+    print(pokemon.habilidade)
