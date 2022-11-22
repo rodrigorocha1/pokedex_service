@@ -21,10 +21,11 @@ class PokeAPI:
 
         except ex.HTTPError as errh:
             print(errh)
+
         except ex.ConnectionError as errc:
             print(errc)
         except ex.Timeout as errt:
-             print(errt)
+            print(errt)
         except ex.RequestException as err:
             print(err)
         except Exception as e:
